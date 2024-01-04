@@ -14,7 +14,7 @@ public class DamkaBoard
 			System.out.print ( "* " );
 		}
 		if ( i % 2 == 0 )
-			System.out.print ( "* " );
+			System.out.print ( "*" );
 		// next row
 		System.out.println (" ");
 	}
