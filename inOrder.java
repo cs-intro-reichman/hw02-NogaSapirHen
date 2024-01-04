@@ -1,4 +1,4 @@
-public class inOrder
+public class InOrder
 {
     public static void main(String[] args) 
 	{
