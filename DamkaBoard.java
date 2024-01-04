@@ -7,7 +7,9 @@ public class DamkaBoard
 	for ( int i = 0; i < n; i++ )
 	{
 		if ( i % 2 == 0 )
+		{
 			System.out.print ( "*" );
+		}
 		// every second row starts with space
 		for ( int j = 0; j < n-1; j++ )
 		{
@@ -18,7 +20,7 @@ public class DamkaBoard
 			System.out.print ( " " );
 		}
 		// next row
-		System.out.println (" ");
+		System.out.println ( );
 	}
 	}
 }

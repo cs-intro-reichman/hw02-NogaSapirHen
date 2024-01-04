@@ -1,3 +1,4 @@
+import java.util.Random;
 public class OneOfEachStats
 {
     public static void main(String[] args) 
@@ -19,7 +20,7 @@ public class OneOfEachStats
 	boolean isGirl = false;
 	boolean isBoy = false;
 	int count = 0;
-	while ( !isBoy || !isGirl )
+	while ( isGirl == false || isBoy == false )
 	{
 		// the int will be 1 or 0
 	double rnd = generator.nextDouble();
@@ -32,7 +33,7 @@ public class OneOfEachStats
 		family2 ++;
 	if ( count == 3 )
 		family3 ++;
-	if ( count >= 4 )
+	if (!( count < 4 ) )
 		family4orMore ++;
 	average += count; 
 	}
