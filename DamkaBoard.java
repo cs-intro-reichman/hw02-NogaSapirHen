@@ -7,14 +7,14 @@ public class DamkaBoard
 	for ( int i = 0; i < n; i++ )
 	{
 		// every second row starts with space
-		if ( i % 2 == 0 )
-			System.out.print ( " *" );
-		for ( int j = 0; j < n - 1; j++ )
+		for ( int j = 0; j < n; j++ )
 		{
+			if ( i % 2 == 0 )
+			System.out.print ( " *" );
+			//System.out.print ( " *" );
+			if ( i % 2 == 1 )
 			System.out.print ( "* " );
 		}
-		if ( i % 2 == 1 )
-			System.out.print ( " * " );
 		// next row
 		System.out.println (" ");
 	}

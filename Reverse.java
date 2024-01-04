@@ -12,7 +12,7 @@ public class Reverse
 			reversed += original.charAt ( i ); 
 		} 
 		System.out.println ( reversed );
-		System.out.println ( "The middle character is " + original.charAt ( middle ) );
+		System.out.println ( "The middle character is " + reversed.charAt ( middle ) );
 		}
 		}
 		
