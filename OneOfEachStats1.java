@@ -20,8 +20,11 @@ public class OneOfEachStats1
 	{
 		// the int will be 1 or 0
 	double random = ( Math.random () );
-	isGirl = ( random < 0.5 );
-	isBoy = (random >= 0.5 );
+	if ( random < 0.5) {
+		isGirl = true;
+	}
+	else 
+	isBoy = true;
 	count ++;
 	}
 	// adds to the general counts

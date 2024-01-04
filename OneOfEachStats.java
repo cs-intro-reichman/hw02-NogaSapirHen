@@ -24,8 +24,11 @@ public class OneOfEachStats
 	{
 		// the int will be 1 or 0
 	double rnd = generator.nextDouble();
-	isGirl = ( rnd < 0.5 );
-	isBoy = (rnd >= 0.5 );
+	if ( rnd < 0.5) {
+		isGirl = true;
+	}
+	else 
+	isBoy = true;
 	count ++;
 	}
 	// adds to the general counts
