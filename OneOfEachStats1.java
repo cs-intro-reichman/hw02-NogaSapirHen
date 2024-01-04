@@ -3,14 +3,11 @@ public class OneOfEachStats1
     public static void main(String[] args) 
 	{
 	// Declares integer
-	int T = Integer.parseInt(args[0]);
-		int seed = Integer.parseInt(args[1]);
-		// Initailizes a random numbers generator with the given seed value
-        Random generator = new Random(seed);  
+	int T = Integer.parseInt ( args[0] );
 	int family2 = 0;
 	int family3 = 0;
 	int family4orMore = 0;
-	double average = 0;
+	double average = 0.0;
 	int mostCommon = 0;
 	// for each family
 	for ( int i = 0; i < T; i ++ )
@@ -19,12 +16,12 @@ public class OneOfEachStats1
 	boolean isGirl = false;
 	boolean isBoy = false;
 	int count = 0;
-	while ( !isBoy || !isGirl )
+	while ( isBoy == false || isGirl == false)
 	{
 		// the int will be 1 or 0
-	double rnd = generator.nextDouble();
-	isGirl = ( rnd < 0.5 );
-	isBoy = (rnd > 0.5 );
+	double random = ( Math.random () );
+	isGirl = ( random < 0.5 );
+	isBoy = (random >= 0.5 );
 	count ++;
 	}
 	// adds to the general counts

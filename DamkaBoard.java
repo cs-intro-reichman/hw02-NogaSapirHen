@@ -9,8 +9,7 @@ public class DamkaBoard
 		if ( i % 2 == 0 )
 		{
 			System.out.print ( "*" );
-		
-
+		}
 		// every second row starts with space
 		for ( int j = 0; j < n-1; j++ )
 		{

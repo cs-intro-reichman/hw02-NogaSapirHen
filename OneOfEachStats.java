@@ -11,7 +11,7 @@ public class OneOfEachStats
 	int family2 = 0;
 	int family3 = 0;
 	int family4orMore = 0;
-	double average = 0;
+	double average = 0.0;
 	int mostCommon = 0;
 	// for each family
 	for ( int i = 0; i < T; i ++ )
@@ -25,7 +25,7 @@ public class OneOfEachStats
 		// the int will be 1 or 0
 	double rnd = generator.nextDouble();
 	isGirl = ( rnd < 0.5 );
-	isBoy = (rnd > 0.5 );
+	isBoy = (rnd >= 0.5 );
 	count ++;
 	}
 	// adds to the general counts
